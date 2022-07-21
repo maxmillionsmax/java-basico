@@ -9,6 +9,7 @@ public class Carro {
 	 private double consumoCombustivel;
 	
 	public Carro() {
+	
 	}
 	
 	public String getMarca() {
