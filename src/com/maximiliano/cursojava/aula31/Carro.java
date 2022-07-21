@@ -1,12 +1,12 @@
-package com.maximiliano.cursojava.aula30;
+package com.maximiliano.cursojava.aula31;
 
- class Carro {
+public class Carro {
 
-	String marca;
-	String modelo;
-	int numPassageiros;
-	double capCombustivel;
-	double consumoCombustivel;
+	 public String marca;
+	 String modelo;
+	 int numPassageiros;
+	 double capCombustivel;
+	 private double consumoCombustivel;
 	
 	public Carro() {
 
@@ -34,19 +34,22 @@ package com.maximiliano.cursojava.aula30;
 		System.out.println("Chamando o construtor com 2 parâmetros");
 	}
 	
-	void exibirAutonomia() {
+	public void exibirAutonomia() {
 		
 		System.out.println("A autonimia do carro é: "+this.capCombustivel*this.consumoCombustivel+" km");
 	}
-	double obterAutonomia() {
+	public double obterAutonomia() {
 
 		return this.capCombustivel*this.consumoCombustivel;
 		
 	}
-	double calcularCombustivel(double km) {
+	
+	private double divideKMPorConsumoCombustivel(double km) {
+		return km/this.consumoCombustivel;
+	}
+	
+	public double calcularCombustivel(double km) {
 		
-		double qtdCombustivel = km/this.capCombustivel;
-		
-		return qtdCombustivel;
+		return this.divideKMPorConsumoCombustivel(km);
 	}
 }
