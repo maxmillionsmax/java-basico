@@ -9,9 +9,10 @@ public class Exer02 {
 		imprimirTela(Calculadora.multiplicar(2,2));
 		imprimirTela(Calculadora.dividir(2,2));
 		imprimirTela(Calculadora.potencia(2,2));
+		imprimirTela(Calculadora.fatorial(3));
 		
 	}
-
+	
 	static void imprimirTela(int num) {
 		System.out.println(num);
 	}
