@@ -2,11 +2,20 @@ package com.maximiliano.cursojava.aula35.labs;
 
 public class Calculadora {
 
-	public static int fibonacci(int nun) {
+	public static int fibonacci(int num) {
 		
-		if (nun < 2) {
+		if (num < 2) {
 			return 1;
 		}
-		return fibonacci(nun - 1) + fibonacci(nun -2);
+		return fibonacci(num - 1) + fibonacci(num -2);
+	}
+	
+	public static int somatorio(int num) {
+		
+		if (num  == 1) {
+			return 1;
+		}
+		
+		return num + somatorio(num - 1);
 	}
 }
