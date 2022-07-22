@@ -20,7 +20,6 @@ public class Exer03 {
 		
 		System.out.println("O Fatorial "+num+"! = "+Calculadora.fatorial(num));
 		
-		
 	}
 
 }
