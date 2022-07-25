@@ -17,7 +17,7 @@ public class MultiplusCatchJava7 {
 		
 		} catch (ArithmeticException | ArrayIndexOutOfBoundsException e) {
 			
-			System.out.println("ERRRROOO, " + e.getMessage());
+			System.out.println("ERRRROOO, " +e);
 		
 		}
 	}
